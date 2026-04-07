@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +29,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <Script src="https://solvinghealth.com/chat-widget.js" data-channel="policyapp" data-color="#1B2A4A" strategy="lazyOnload" />
+        <Script src="https://solvinghealth.com/voice-embed.js" data-site="policyapp" strategy="lazyOnload" />
+      </body>
     </html>
   );
 }
