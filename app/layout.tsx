@@ -32,6 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <Script src="https://solvinghealth.com/voice-embed.js" data-site="policyapp" strategy="lazyOnload" />
+        <Script src="https://solvinghealth.com/footer.js" data-brand="solvinghealth" data-theme="light" strategy="lazyOnload" />
       </body>
     </html>
   );
