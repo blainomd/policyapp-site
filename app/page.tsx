@@ -684,25 +684,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="py-12 px-6 border-t border-surface">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <div className="text-lg font-semibold tracking-tight text-forest">
-              policyapp
-            </div>
-            <p className="text-sm text-muted mt-1">
-              Your documents. Always current. Always accessible.
-            </p>
+      {/* ECOSYSTEM FOOTER */}
+      <section className="py-10 px-6 bg-[#1a1715]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-white/20 text-xs text-center tracking-widest uppercase mb-5">Part of the SolvingHealth ecosystem</p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            {[
+              { label: "solvinghealth.com", href: "https://solvinghealth.com" },
+              { label: "co-op.care", href: "https://co-op.care" },
+              { label: "comfortcard.org", href: "https://comfortcard.org" },
+              { label: "caregoals.com", href: "https://caregoals.com" },
+              { label: "hsaletter.com", href: "https://hsaletter.com" },
+              { label: "surgeonvalue.com", href: "https://surgeonvalue.com" },
+            ].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/20 hover:text-white/50 transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted">
-            <a href="https://co-op.care" className="hover:text-forest transition-colors">co-op.care</a>
-            <a href="https://solvinghealth.com" className="hover:text-forest transition-colors">SolvingHealth</a>
-            <span className="hidden md:inline text-muted-light">|</span>
-            <span>&copy; 2026 policyapp. A <a href="https://solvinghealth.com" className="hover:text-forest transition-colors">SolvingHealth</a> product.</span>
-          </div>
+          <p className="text-center text-white/10 text-xs mt-6">
+            &copy; 2026 policyapp — A SolvingHealth product. Boulder, Colorado.
+          </p>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
