@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         {children}
-        <Script src="https://solvinghealth.com/footer.js" data-brand="policyapp" data-theme="light" strategy="lazyOnload" />
+        <Script src="https://harnesshealth.ai/footer.js" data-brand="policyapp" data-theme="light" strategy="lazyOnload" />
       </body>
     </html>
   );
