@@ -1,3 +1,5 @@
+import WaitlistForm from "./WaitlistForm";
+
 /* ─── Icon Components ─── */
 
 function ClipboardIcon({ className }: { className?: string }) {
@@ -217,22 +219,7 @@ export default function Home() {
             AI-powered policy management for your health, your care, and your
             future.
           </p>
-          <form
-            className="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            action="#"
-          >
-            <input
-              type="email"
-              placeholder="you@email.com"
-              className="flex-1 h-12 px-4 rounded-lg border border-muted-light/40 bg-white text-foreground placeholder:text-muted-light focus:outline-none focus:ring-2 focus:ring-forest/30 focus:border-forest transition"
-            />
-            <button
-              type="submit"
-              className="h-12 px-6 rounded-lg bg-forest text-white font-medium hover:bg-forest-dark transition-colors cursor-pointer"
-            >
-              Get Early Access
-            </button>
-          </form>
+          <WaitlistForm source="hero" />
         </div>
       </section>
 
@@ -640,22 +627,7 @@ export default function Home() {
           <p className="mt-4 text-muted text-lg">
             Join the waitlist. Be first when we launch.
           </p>
-          <form
-            className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-            action="#"
-          >
-            <input
-              type="email"
-              placeholder="you@email.com"
-              className="flex-1 h-12 px-4 rounded-lg border border-muted-light/40 bg-white text-foreground placeholder:text-muted-light focus:outline-none focus:ring-2 focus:ring-forest/30 focus:border-forest transition"
-            />
-            <button
-              type="submit"
-              className="h-12 px-6 rounded-lg bg-forest text-white font-medium hover:bg-forest-dark transition-colors cursor-pointer"
-            >
-              Get Early Access
-            </button>
-          </form>
+          <WaitlistForm source="footer" />
         </div>
       </section>
 
