@@ -670,6 +670,7 @@ export default function Home() {
               { label: "caregoals.com", href: "https://caregoals.com" },
               { label: "hsaletter.com", href: "https://hsaletter.com" },
               { label: "surgeonvalue.com", href: "https://surgeonvalue.com" },
+              { label: "Read the manifesto →", href: "https://co-op.care/manifesto" },
             ].map((link) => (
               <a
                 key={link.href}
