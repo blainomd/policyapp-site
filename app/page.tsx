@@ -207,17 +207,19 @@ export default function Home() {
 
         <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-xs uppercase tracking-[0.3em] text-amber font-semibold">
-            AI-Powered Policy Management
+            Provider Document Vault + Audit Defense
           </p>
           <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-            <span className="text-foreground">Every policy. Every directive.{" "}</span>
+            <span className="text-foreground">The audit packet you need{" "}</span>
             <span className="bg-gradient-to-br from-green-800 to-green-600 bg-clip-text text-transparent">
-              One place that never forgets.
+              builds itself.
             </span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-            AI-powered policy management for your health, your care, and your
-            future.
+            Drop your credentialing, compliance, and policy documents.
+            PolicyApp hashes every file, tracks every change, and assembles
+            a signed audit packet on demand — before the auditor shows up.
+            Longitudinal compliance, not scramble-day compliance.
           </p>
           <WaitlistForm source="hero" />
         </div>

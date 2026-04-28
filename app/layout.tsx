@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PolicyApp — AI-Powered Policy & Document Management",
+  title: "PolicyApp — The audit packet that builds itself.",
   description:
-    "Every policy. Every directive. One place that never forgets. AI-powered policy management for your health, your care, and your future.",
+    "Drop your credentialing and compliance documents. PolicyApp hashes every file, tracks every change, and assembles a signed audit packet on demand. Longitudinal compliance, not scramble-day compliance.",
 };
 
 export default function RootLayout({
